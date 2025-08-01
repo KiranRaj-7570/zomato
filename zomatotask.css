@@ -1,9 +1,8 @@
 body{margin: 0;
+    font-family:"Lexend",sans-serif;
 }
 .container>div{
     width: 100vw;
-    height: 100vh;
-   
 }
 .div1{height: 100vh;}
 .div1 video{
@@ -82,24 +81,32 @@ body{margin: 0;
     transform: translateX(-50%);
     font-size: 18px;
     font-family: sans-serif;
-    animation: anime 1s 0.1s infinite;
+    animation: anime 0.5s ease infinite alternate; 
+    
 }
 .headcontent .scroll span{
     display: inline-block;
     transform: rotate(-90deg);
-    padding-top: 5px;
     font-size: 1.3em;
 }
 @keyframes anime{
-    to {bottom:40px;}
-    from {bottom:30px;}
+     0%{bottom: 50px;}
+    100%{bottom: 59px;}
+    
+    
 }
-.div2{height: 100vh;
-position: static;}
+.div2{
+height: 100vh;
+background-image: url("page2bg.png");
+margin-bottom: 100px;
+background-repeat:no-repeat ;
+background-size: 1050px ;
+background-position-y: 30px;
+background-position-x:-700px ;
+}
 .div2 .head2{
     position: relative;  
     text-align: center;
-    color: white;
     width: 50%;
     top: 40%;
     left: 50%;
@@ -109,7 +116,7 @@ position: static;}
 .div2 .head2 h1{
     font-size: 4em;
     padding-top: 15px;    
-    color: rgb(240, 62, 62);
+    color: rgb(239 79 95);
     
 }
 .div2 .head2 p{
@@ -124,16 +131,15 @@ position: static;}
     position: relative;
     height: 15%;
     width: 60%;
-    top: 40%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: grid;
-    grid-template-columns: auto auto auto;
-   
+    grid-template-columns: auto auto auto; 
     box-shadow:2px 2px 10px rgb(195, 195, 195);
     border-radius: 25px;
-   
-   font-family:'Lexend',sans-serif;
+    padding-left: 30px;
+    font-family:'Lexend',sans-serif;
     overflow: hidden;
     column-gap: 2px;
 }
@@ -145,25 +151,228 @@ position: static;}
     background-color: rgb(255, 255, 255);
    
 }
-#col1 .text1{
-    color: rgb(75, 99, 120);
+.coulumn span{
     
-    font-size: 29px;
-    font-weight: bolder;
+    color: rgb(75, 99, 120);
+    font-size: 37px;
+    font-weight:800;
     letter-spacing: 0.1rem;
     line-height: 1.5rem;
 }
-#col1 p{
-    transform: translateY(-10px);
+.coulumn p{
+    font-size: 18px;
+    transform: translateY(-13px);
     font-family: sans-serif;
     color: rgb(113, 111, 143);
 }
 .gridcontainer #col1>img{
     position: relative;
     top: -80px;
-    left: 180px;
+    left: 210px;
     width: 55px;
     height: 50px;
 }
+.gridcontainer #col2>img{
+    position: relative;
+    top: -80px;
+    left: 120px;
+    width: 37px;
+    height: 50px;
+}
+.gridcontainer #col3>img{
+    position: relative;
+    top: -80px;
+    left: 190px;
+    width: 50px;
+    height: 50px;
+}
+.div2 #burger{
+    width: min(22%,240px);
+    position: relative;
+    left: 250px;
+   bottom: 250px;
+   animation: burgeranim 1.5s ease-in-out alternate;
+  
+  
+}
+.div2 #leaf{
+    position: relative;
+    top: -600px;
+    left: 250px;
+    width: 3rem;
+}
+.div2 #tomato{
+    position: relative;
+    right:95px;
+    top: -95px;
+    width: 3rem;
+}
+.div2 #tomato2{
+    position: relative;
+    float: right;
+    right: 100px;
+    bottom: 250px;
+    width: 3rem;
+    transform: scaleX(-1);
+}
+.div2 #pizza{
+    width: min(22%,240px);
+    position: relative;
+    float: right;
+    right: 100px;
+    bottom: 200px;
+    animation: pizzaanim 1.5s ease-in-out alternate;
+ 
+}
+.div2 #momos{
+    width: min(22%,240px);
+    position: relative;
+    float: right;
+    left: 20px;
+    bottom: 475px;
+    transform: scaleY(0.88);
+    animation: momosanim 1.5s ease-in-out alternate;
+    
 
+}
+@keyframes burgeranim{
+    from{transform: translate(-400px,-100px);}
+}
+@keyframes pizzaanim{
+    from{transform: translate(400px,-100px);}
+}
+@keyframes momosanim{
+    from{transform: translate(400px,-100px);}
+}
+.div3{
+    background: linear-gradient(to top,white , rgb(255, 255, 255),rgba(235, 160, 160, 0.351));
+    height: 100vh;
+}
+.div3 .head3{
+    position: relative;  
+    text-align: center;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:"Lexend",sans-serif;
+}
+.div3 .head3 h1{
+    font-size: 4em;
+    font-weight: 700;
+    padding-top: 15px;   
+    color: rgb(239, 79, 95);
+}
+.div3 .head3 p{
+    position: absolute;
+    color: rgb(94, 94, 94);
+    font-weight:300;
+    width: 100%;
+    font-size: 24px;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0.02rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+}
+.div3>.photogallery{
+    background-color: aqua;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 80%;
+   
+}
+.photogallery #phone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: auto;
+}
+.callendardiv{
+    position: absolute;
+    height: 160px;
+    width:142px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 9px rgb(186, 181, 181);
+    border-radius: 30px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.callendardiv #calendar{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 90px;
+}
+.callendardiv p{
+    display: block;
+    top: 95px;
+    position: relative;
+    text-align: center;
+}
+.photogallery>.smallcontainer{
+    position: relative;
+    background-color: white;
+    height: 130px;
+    width:115px;
+    box-shadow: 1px 1px 9px rgb(186, 181, 181);
+    border-radius: 30px; 
+}
+.smallcontainer img{
+     position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70px;
+}
+.smallcontainer p{
+    position: relative;
+    display: block;
+    top: 3px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+}
+#banana{ 
+    top: 20px;
+    left: 130px;   
+}
+#veg{   
+    left: 270px;
+    bottom: 43%; 
+}
+#cola{
+    bottom: 95px;
+    left: 160px;   
+}
+#gift{
+    bottom: 245px;
+    left: 300px;   
+}
+#noodles{ 
+    float: right;
+    bottom: 519px;
+    right:270px;   
+}
+ #veg{   
+    right: 300px;
+    bottom: 43%; 
+}/*
+#cola{
+    bottom: 95px;
+    left: 160px;   
+}
+#gift{
+    bottom: 245px;
+    left: 300px;   
+} */
 
