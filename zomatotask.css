@@ -477,17 +477,17 @@ background-position-x:-700px ;
     align-items: center;
 }
 
-.item:nth-child(1),
-.item:nth-child(2) {
+.itemdiv4:nth-child(1),
+.itemdiv4:nth-child(2) {
     
   width: 300px;
   line-height: 12px;
   height: 110px;
 }
-.para1{
+.para1div4{
     font-size: 20px;
 }
-.para2{
+.para2div4{
         background:linear-gradient(to right,rgb(225, 133, 28) ,rgb(235, 213, 140) ,rgb(197, 116, 29) );
         -webkit-background-clip: text;
         font-size: 16px;
@@ -502,7 +502,7 @@ background-position-x:-700px ;
  #coin1{
     position: absolute;
     width: 220px;
-    bottom: 470px;
+    bottom: 420px;
     left: 950px;
  }
  #coin2{
@@ -758,6 +758,26 @@ background-position-x:-700px ;
 #hr{
     position:absolute;
     display: inline-block;
-    border-bottom: 2px solid grey;
-    top: 80vh;
+    border-bottom: 1px solid rgba(124, 122, 122, 0.725);
+    top: 65vh;
+    width: 59.5vw;
+     left: 50%;
+    transform: translateX(-50%);
+}
+.endpara{
+    position:absolute;
+    display: inline-block;
+    color: rgba(117, 119, 126, 0.86);
+    top: 66vh;
+    width: 59.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    line-height: 1.01rem;
+}
+#endfooterzomato{
+    height: 40px;
+    position: absolute;
+    top: 90px;
+    left: 305px;
 }
